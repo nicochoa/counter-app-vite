@@ -5,3 +5,9 @@ html, body{
     font-size: 1.3rem;
     padding: 1rem;
 }
+
+button{
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
