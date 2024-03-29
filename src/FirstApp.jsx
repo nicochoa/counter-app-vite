@@ -12,13 +12,14 @@ import { PropTypes } from "prop-types";
 //     title: 'Fernando',
 // };
 
-export const FirstApp = ( { title, subTitle } ) => {
+export const FirstApp = ( { title, subTitle, name } ) => {
     // console.log(props);
     return (
         <>
-            <h1> { title }</h1>
+            <h1> { title } </h1>
             {/* <code>{ JSON.stringify(newMessage) }</code> */}
-            <p> { subTitle }</p>
+            <p> { subTitle } </p>
+            <p> { name } </p>
         </>
     )
 };
@@ -28,7 +29,7 @@ FirstApp.propTypes = {
     subTitle: PropTypes.string.isRequired,
 }
 FirstApp.defaultProps = {
-    name: 'Nicolas Ochoa,',
+    name: 'Nicolas Ochoa',
     subTitle: 'No hay subtitulo',
     title: 'No hay titulo',
 }
